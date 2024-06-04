@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+}
+
+.main {
+  height: 340px;
+  background-color: #EFFD72;
+  padding-left: calc(50% - 120px);
+  padding-top: 260px;
+}
+
+.start__btn {
+  height: 80px;
+  width: 240px;
+  background-color: #906CD7;
+  color: #4711AE;
+  border: 1px #2A0671;
+  border-radius: 20px;
+}
+
+.start__btn:hover {
+  background-color: #7746D7;
+  color: #2A0671;
+  cursor: pointer;
+}
+
+.footer {
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EC6AA1;
+}
+
+.credits {
+  max-width: 200px;
+  color: #D9005B;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+.game__window {
+  position: absolute;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: calc(100% - 100px);
+  background-color: #906CD7;
+  top: 50px;
+  right: 50px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.close-btn {
+  background-color: #906CD7;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0px;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.close-img {
+  width: 30px;
+  height: 30px;
+}
+
+.next-btn, .prev-btn {
+  margin-top: 30px;
+  height: 45px;
+  width: 130px;
+  background-color: #EC6AA1;
+  color: #D9005B;
+  border: 0px;
+  border-radius: 22px;
+  font-size: large;
+}
+
+.next-btn:hover, .prev-btn:hover {
+  cursor: pointer;
+  background-color: #EC3B86;
+  color: #8D003B;
+}
+
+.plants { 
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  background-color: #EFFD72;
+  border: #AEBC2F 1px solid;
+  color: 	#D9005B	;
+}
+
+.card:hover {
+  cursor: pointer;
+}
