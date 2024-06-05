@@ -30,7 +30,6 @@ const plantsArr = [
     photo: "../../public/plants/wheat.jpg"
   },
 ];
-const temp = [{}, {}, {}];
 const weather = [{}, {}, {}, {}, {}];
 const pests = [{}, {}, {}];
 

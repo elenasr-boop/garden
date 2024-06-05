@@ -154,7 +154,7 @@
   max-width: 100px;
 }
 
-.fertilizer, .light, .water, .temp {
+.fertilizer, .light, .water, .temp, .pests {
   display: flex;
   justify-content: space-around;
 }
