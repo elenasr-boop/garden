@@ -33,7 +33,6 @@ const plantsArr = [
 const water = [{}, {}, {}];
 const soil = [{}, {}, {}, {}, {}];
 const temp = [{}, {}, {}];
-const light = [{}, {}, {}];
 const weather = [{}, {}, {}, {}, {}];
 const pests = [{}, {}, {}];
 

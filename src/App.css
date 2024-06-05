@@ -154,11 +154,12 @@
   max-width: 100px;
 }
 
-.fertilizer {
+.fertilizer, .light {
   display: flex;
   justify-content: space-around;
 }
 
-.fertilizer .card .card__name {
+.fertilizer .card .card__name,
+.light .card .card__name {
   font-size: large;
 }
