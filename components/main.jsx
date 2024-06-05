@@ -4,6 +4,7 @@ import { Fertilizer } from "./cards/fertilizer";
 import { Light } from "./cards/light.jsx";
 import { Water } from "./cards/water.jsx";
 import { Soil } from "./cards/soil.jsx";
+import { Temp } from "./cards/temp.jsx";
 
 export function Main() {
   const [isOnStartButton, setIsOnStartButton] = useState(false);
@@ -28,7 +29,8 @@ export function Main() {
           {/* <Fertilizer> </Fertilizer> */}
           {/* <Plants></Plants> */}
           {/* <Water></Water> */}
-          <Soil></Soil>
+          {/* <Soil></Soil> */}
+          <Temp></Temp>
         </div>
       )}
     </div>
