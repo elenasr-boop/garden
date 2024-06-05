@@ -8,7 +8,7 @@
 }
 
 .main {
-  height: 340px;
+  height: 390px;
   background-color: #EFFD72;
   padding-left: calc(50% - 120px);
   padding-top: 260px;
@@ -85,7 +85,7 @@
   height: 30px;
 }
 
-.next-btn, .prev-btn {
+.next-btn {
   margin-top: 30px;
   height: 45px;
   width: 130px;
@@ -96,7 +96,7 @@
   font-size: large;
 }
 
-.next-btn:hover, .prev-btn:hover {
+.next-btn:hover {
   cursor: pointer;
   background-color: #EC3B86;
   color: #8D003B;
@@ -108,17 +108,48 @@
   align-items: center;
   row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .card {
-  width: 200px;
+  max-width: 400px;
   height: 300px;
   background-color: #EFFD72;
   border: #AEBC2F 1px solid;
-  color: 	#D9005B	;
+  color: 	#D9005B;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.card__main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__name {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.card__img {
+  width: 150px;
+  object-fit: cover;
+}
+
+.card__audio audio {
+  width: 150px;
 }
 
 .card:hover {
   cursor: pointer;
+}
+
+.card__desc {
+  max-width: 100px;
 }
