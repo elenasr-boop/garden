@@ -1,24 +1,30 @@
-const water = [
+const soil = [
     {
-        name: "Малое количество воды",
-        photo: "../../public/water/lesswater.jpg",
-        audio: "../../public/water/lesswater.mp3",
+        name: "Глина",
+        photo: "../../public/soil/clay.png",
+        audio: "../../public/soil/clay.mp3",
     }, 
     {
-        name: "Среднее количество воды",
-        photo: "../../public/water/meanwater.jpg",
-        audio: "../../public/water/meanwater.mp3",
+        name: "Гумус",
+        photo: "../../public/soil/humus.png",
+        audio: "../../public/soil/humus.mp3",
     }, 
     {
-        name: "Большое количество воды",
-        photo: "../../public/water/lotwater.jpg",
-        audio: "../../public/water/lotwater.mp3",
-    }];
+        name: "Известь",
+        photo: "../../public/soil/lime.png",
+        audio: "../../public/soil/lime.mp3",
+    },
+    {
+        name: "Песок",
+        photo: "../../public/soil/sand.png",
+        audio: "../../public/soil/sand.mp3",
+    }
+];
 
-export function Water ({ plant: string }) {
+export function Soil ({ plant: string }) {
   return (
-    <div className="water cards">
-      {water.map((el, id) => {
+    <div className="soil cards">
+      {soil.map((el, id) => {
         return (
           <div className="card">
             <div className="card__main">

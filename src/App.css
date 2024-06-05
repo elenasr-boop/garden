@@ -154,12 +154,22 @@
   max-width: 100px;
 }
 
-.fertilizer, .light {
+.fertilizer, .light, .water {
   display: flex;
   justify-content: space-around;
 }
 
 .fertilizer .card .card__name,
-.light .card .card__name {
+.light .card .card__name,
+.water .card .card__name
+ {
   font-size: large;
+}
+
+.soil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  row-gap: 15px;
 }
