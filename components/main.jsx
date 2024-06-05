@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Plants } from "./cards/plant";
+import { Fertilizer } from "./cards/fertilizer";
 
 export function Main() {
   const [isOnStartButton, setIsOnStartButton] = useState(false);
@@ -20,7 +21,8 @@ export function Main() {
           <button className="close-btn" onClick={toggleDropdown}>
             <img src="../icons/circle-xmark.svg" className="close-img" />
           </button>
-          <Plants> </Plants>
+          <Fertilizer> </Fertilizer>
+          {/* <Plants></Plants> */}
         </div>
       )}
     </div>
