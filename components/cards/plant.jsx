@@ -30,8 +30,6 @@ const plantsArr = [
     photo: "../../public/plants/wheat.jpg"
   },
 ];
-const weather = [{}, {}, {}, {}, {}];
-const pests = [{}, {}, {}];
 
 export function Plants() {
   return (
@@ -39,7 +37,7 @@ export function Plants() {
       <div className="plants cards">
         {plantsArr.map((el, id) => {
           return (
-            <div className="card" >
+            <button onClick={alert("Вы нажали на карточку", {el.name})} className="card" >
               <div className="card__main">
                 <p className="card__name">{el.name}</p>
                 <img src={el.photo} alt={el.name} className="card__img"/>
@@ -48,7 +46,7 @@ export function Plants() {
                 </figure>
               </div>
               <p className="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis minima sint autem laborum, in minus.</p>
-            </div>
+            </button>
           )
         })}
       </div>
