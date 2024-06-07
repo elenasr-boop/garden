@@ -1,23 +1,23 @@
 const weather = [
   {
     name: "Засуха",
-    photo: "../../public/weather/drought/drought.jpg",
-    audio: "../../public/weather/drought/drought.mp3",
+    photo: "../../weather/drought/drought.jpg",
+    audio: "../../weather/drought/drought.mp3",
   },
   {
     name: "Наводнение",
-    photo: "../../public/weather/flood/flood.jpg",
-    audio: "../../public/weather/flood/flood.mp3",
+    photo: "../../weather/flood/flood.jpg",
+    audio: "../../weather/flood/flood.mp3",
   },
   {
     name: "Заморозок",
-    photo: "../../public/weather/frost/frost.jpg",
-    audio: "../../public/weather/frost/frost.mp3",
+    photo: "../../weather/frost/frost.jpg",
+    audio: "../../weather/frost/frost.mp3",
   },
   {
     name: "Зной",
-    photo: "../../public/weather/heat/heat.jpg",
-    audio: "../../public/weather/heat/heat.mp3",
+    photo: "../../weather/heat/heat.jpg",
+    audio: "../../weather/heat/heat.mp3",
   }
 ];
 

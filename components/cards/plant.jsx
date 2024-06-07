@@ -1,33 +1,33 @@
 const plantsArr = [
   {
     name: "Акация",
-    audio: "../../public/plants/acacia.mp3",
-    photo: "../../public/plants/acacia.png"
+    audio: "../../plants/acacia.mp3",
+    photo: "../../plants/acacia.png"
   },
   {
     name: "Яблоня",
-    audio: "../../public/plants/apple.mp3",
-    photo: "../../public/plants/apple.jpg"
+    audio: "../../plants/apple.mp3",
+    photo: "../../plants/apple.jpg"
   },
   {
     name: "Ель",
-    audio: "../../public/plants/fir.mp3",
-    photo: "../../public/plants/fir.jpg"
+    audio: "../../plants/fir.mp3",
+    photo: "../../plants/fir.jpg"
   },
   {
     name: "Клубника",
-    audio: "../../public/plants/strawberry.mp3",
-    photo: "../../public/plants/strawberry.jpg"
+    audio: "../../plants/strawberry.mp3",
+    photo: "../../plants/strawberry.jpg"
   },
   {
     name: "Помидор",
-    audio: "../../public/plants/tomato.mp3",
-    photo: "../../public/plants/tomato.jpg"
+    audio: "../../plants/tomato.mp3",
+    photo: "../../plants/tomato.jpg"
   },
   {
     name: "Пшеница",
-    audio: "../../public/plants/wheat.mp3",
-    photo: "../../public/plants/wheat.jpg"
+    audio: "../../plants/wheat.mp3",
+    photo: "../../plants/wheat.jpg"
   },
 ];
 
@@ -37,7 +37,7 @@ export function Plants() {
       <div className="plants cards">
         {plantsArr.map((el, id) => {
           return (
-            <button onClick={alert("Вы нажали на карточку", {el.name})} className="card" >
+            <button className="card" key={id}>
               <div className="card__main">
                 <p className="card__name">{el.name}</p>
                 <img src={el.photo} alt={el.name} className="card__img"/>

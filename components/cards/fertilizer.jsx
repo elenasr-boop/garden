@@ -1,18 +1,18 @@
 const fertilizer = [
     {
         name: "Малое количество удобрений",
-        photo: "../../public/fertilizer/lessfertilizer.webp",
-        audio: "../../public/fertilizer/lessfertilizer.mp3",
+        photo: "../../fertilizer/lessfertilizer.webp",
+        audio: "../../fertilizer/lessfertilizer.mp3",
     }, 
     {
         name: "Среднее количество удобрений",
-        photo: "../../public/fertilizer/meanfertilizer.png",
-        audio: "../../public/fertilizer/meanfertilizer.mp3",
+        photo: "../../ertilizer/meanfertilizer.png",
+        audio: "../../fertilizer/meanfertilizer.mp3",
     }, 
     {
         name: "Большое количество удобрений",
-        photo: "../../public/fertilizer/lotfertilizer.jpg",
-        audio: "../../public/fertilizer/lotfertilizer.mp3",
+        photo: "../../fertilizer/lotfertilizer.jpg",
+        audio: "../../fertilizer/lotfertilizer.mp3",
     }];
 
 export function Fertilizer({ plant: string }) {

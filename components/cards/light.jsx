@@ -1,18 +1,18 @@
 const light = [
     {
         name: "Малое количество света",
-        photo: "../../public/light/lesslight.jpg",
-        audio: "../../public/light/lesslight.mp3",
+        photo: "../../light/lesslight.jpg",
+        audio: "../../light/lesslight.mp3",
     }, 
     {
         name: "Среднее количество света",
-        photo: "../../public/light/meanlight.jpg",
-        audio: "../../public/light/meanlight.mp3",
+        photo: "../../light/meanlight.jpg",
+        audio: "../../light/meanlight.mp3",
     }, 
     {
         name: "Большое количество света",
-        photo: "../../public/light/lotlight.jpg",
-        audio: "../../public/light/lotlight.mp3",
+        photo: "../../light/lotlight.jpg",
+        audio: "../../light/lotlight.mp3",
     }];
 
 export function Light ({ plant: string }) {

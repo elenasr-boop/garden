@@ -1,23 +1,23 @@
 const soil = [
     {
         name: "Глина",
-        photo: "../../public/soil/clay.png",
-        audio: "../../public/soil/clay.mp3",
+        photo: "../../soil/clay.png",
+        audio: "../../soil/clay.mp3",
     }, 
     {
         name: "Гумус",
-        photo: "../../public/soil/humus.png",
-        audio: "../../public/soil/humus.mp3",
+        photo: "../../soil/humus.png",
+        audio: "../../soil/humus.mp3",
     }, 
     {
         name: "Известь",
-        photo: "../../public/soil/lime.png",
-        audio: "../../public/soil/lime.mp3",
+        photo: "../../soil/lime.png",
+        audio: "../../soil/lime.mp3",
     },
     {
         name: "Песок",
-        photo: "../../public/soil/sand.png",
-        audio: "../../public/soil/sand.mp3",
+        photo: "../../soil/sand.png",
+        audio: "../../soil/sand.mp3",
     }
 ];
 

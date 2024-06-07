@@ -1,18 +1,18 @@
 const water = [
     {
         name: "Малое количество воды",
-        photo: "../../public/water/lesswater.jpg",
-        audio: "../../public/water/lesswater.mp3",
+        photo: "../../water/lesswater.jpg",
+        audio: "../../water/lesswater.mp3",
     }, 
     {
         name: "Среднее количество воды",
-        photo: "../../public/water/meanwater.jpg",
-        audio: "../../public/water/meanwater.mp3",
+        photo: "../../water/meanwater.jpg",
+        audio: "../../water/meanwater.mp3",
     }, 
     {
         name: "Большое количество воды",
-        photo: "../../public/water/lotwater.jpg",
-        audio: "../../public/water/lotwater.mp3",
+        photo: "../../water/lotwater.jpg",
+        audio: "../../water/lotwater.mp3",
     }];
 
 export function Water ({ plant: string }) {

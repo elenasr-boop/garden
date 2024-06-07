@@ -1,18 +1,18 @@
 const temp = [
     {
         name: "Низкая температура",
-        photo: "../../public/temp/lesstemp.jpg",
-        audio: "../../public/temp/lesstemp.mp3",
+        photo: "../../temp/lesstemp.jpg",
+        audio: "../../temp/lesstemp.mp3",
     }, 
     {
         name: "Средняя температура",
-        photo: "../../public/temp/meantemp.png",
-        audio: "../../public/temp/meantemp.mp3",
+        photo: "../../temp/meantemp.png",
+        audio: "../../temp/meantemp.mp3",
     }, 
     {
         name: "Высокая температура",
-        photo: "../../public/temp/lottemp.png",
-        audio: "../../public/temp/lottemp.mp3",
+        photo: "../../temp/lottemp.png",
+        audio: "../../temp/lottemp.mp3",
     }];
 
 export function Temp ({ plant: string }) {

@@ -1,18 +1,18 @@
 const pests = [
     {
         name: "Насекомые",
-        photo: "../../public/pests/insect/insect.jpg",
-        audio: "../../public/pests/insect/insect.mp3"
+        photo: "../../pests/insect/insect.jpg",
+        audio: "../../pests/insect/insect.mp3"
     }, 
     {
         name: "Сорняки",
-        photo: "../../public/pests/weed/weed.jpg",
-        audio: "../../public/pests/weed/weed.mp3"
+        photo: "../../pests/weed/weed.jpg",
+        audio: "../../pests/weed/weed.mp3"
     }, 
     {
         name: "Грызуны",
-        photo: "../../public/pests/rodent/rodent.jpg",
-        audio: "../../public/pests/rodent/rodent.mp3"
+        photo: "../../pests/rodent/rodent.jpg",
+        audio: "../../pests/rodent/rodent.mp3"
     }];
 
 export function Pests () {
