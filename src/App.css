@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  background-color: #EFFD72;
+  height: 850px;
+}
+
 #root {
   width: 100%;
 }
@@ -84,7 +89,7 @@
   height: 30px;
 }
 
-.next-btn {
+.next-btn, .before-btn {
   margin-top: 30px;
   height: 45px;
   width: 130px;
@@ -93,9 +98,10 @@
   border: 0px;
   border-radius: 22px;
   font-size: large;
+  align-content: center;
 }
 
-.next-btn:hover {
+.next-btn:hover, .before-btn:hover {
   cursor: pointer;
   background-color: #EC3B86;
   color: #8D003B;
@@ -126,6 +132,10 @@
   border-radius: 15px;
 }
 
+.card:hover {
+  color: #D9005B;
+}
+
 .card__main {
   display: flex;
   flex-direction: column;
@@ -141,6 +151,7 @@
 .card__img {
   width: 150px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .card__audio audio {
