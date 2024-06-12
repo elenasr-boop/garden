@@ -27,7 +27,6 @@ const soilArr = [
 
 export function Soil() {
   let { plant } = useParams();
-  let link = "/water/" + plant;  
 
   return (
      <div className="game__window">
@@ -41,7 +40,7 @@ export function Soil() {
       </div>
       <div className="buttons">
         <Link to="/plants" className="before-btn">Назад</Link>
-        <Link to={link} className="next-btn">Далее</Link>
+        <Link to={`/water/${plant}`} className="next-btn">Далее</Link>
       </div>
      </div>
   );

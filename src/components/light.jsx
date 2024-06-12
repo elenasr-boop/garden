@@ -1,3 +1,6 @@
+import { Link, useParams } from "react-router-dom";
+import { Card } from "./cards/card";
+
 const light = [
     {
         name: "Малое количество света",
@@ -15,26 +18,23 @@ const light = [
         audio: "../../light/lotlight.mp3",
     }];
 
-export function Light ({ plant: string }) {
+export function Light () {
+  let { plant } = useParams();
+
   return (
-    <div className="light cards">
-      {light.map((el, id) => {
-        return (
-          <div className="card">
-            <div className="card__main">
-              <p className="card__name">{el.name}</p>
-              <img src={el.photo} alt={el.name} className="card__img" />
-              <figure className="card__audio">
-                <audio controls src={el.audio}></audio>
-              </figure>
-            </div>
-            <p className="card__desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              minima sint autem laborum, in minus.
-            </p>
-          </div>
-        );
-      })}
-    </div>
+     <div className="game__window">
+      <Link to="/">
+        <button className="close-btn">
+          <img src="../icons/circle-xmark.svg" className="close-img" />
+        </button>
+      </Link>
+      <div className="soil cards">
+        {light.map((el, id) => (<Card card={el} id={id} corAnsw={2} key={id} />))}
+      </div>
+      <div className="buttons">
+        <Link to={`/fertilizer/${plant}`} className="before-btn">Назад</Link>
+        <Link to={`/complication`} className="next-btn">Далее</Link>
+      </div>
+     </div>
   );
 }

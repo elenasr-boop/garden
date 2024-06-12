@@ -118,7 +118,7 @@ body {
 
 
 
-.fertilizer, .light, .water, .temp, .pests {
+.fertilizer, .light, .water, .temp, .pests, .choice {
   display: flex;
   justify-content: space-around;
 }
@@ -126,7 +126,7 @@ body {
 .fertilizer .card .card__name,
 .light .card .card__name,
 .water .card .card__name, 
-.temp .card .card__name
+.temp .card .card__name, .choice
  {
   font-size: large;
 }

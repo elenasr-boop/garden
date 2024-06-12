@@ -1,3 +1,6 @@
+import { Link, useParams } from "react-router-dom";
+import { Card } from "./cards/card";
+
 const fertilizer = [
     {
         name: "Малое количество удобрений",
@@ -6,7 +9,7 @@ const fertilizer = [
     }, 
     {
         name: "Среднее количество удобрений",
-        photo: "../../ertilizer/meanfertilizer.png",
+        photo: "../../fertilizer/meanfertilizer.png",
         audio: "../../fertilizer/meanfertilizer.mp3",
     }, 
     {
@@ -15,26 +18,29 @@ const fertilizer = [
         audio: "../../fertilizer/lotfertilizer.mp3",
     }];
 
-export function Fertilizer({ plant: string }) {
+export function Fertilizer() {
+  let { plant } = useParams();
+
   return (
-    <div className="fertilizer cards">
-      {fertilizer.map((el, id) => {
-        return (
-          <div className="card">
-            <div className="card__main">
-              <p className="card__name">{el.name}</p>
-              <img src={el.photo} alt={el.name} className="card__img" />
-              <figure className="card__audio">
-                <audio controls src={el.audio}></audio>
-              </figure>
-            </div>
-            <p className="card__desc">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              minima sint autem laborum, in minus.
-            </p>
-          </div>
-        );
-      })}
+    <div className="game__window">
+      <Link to="/">
+        <button className="close-btn">
+          <img src="../icons/circle-xmark.svg" className="close-img" />
+        </button>
+      </Link>
+      <div className="water cards">
+        {fertilizer.map((el, id) => (
+          <Card card={el} id={id} corAnsw={2} key={id} />
+        ))}
+      </div>
+      <div className="buttons">
+        <Link to={`/temperature/${plant}`} className="before-btn">
+          Назад
+        </Link>
+        <Link to={`/light/${plant}`} className="next-btn">
+          Далее
+        </Link>
+      </div>
     </div>
   );
 }
