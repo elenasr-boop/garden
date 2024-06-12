@@ -1,29 +1,24 @@
 import { Link } from "react-router-dom";
+import { Card } from "./cards/card";
 
-const weather = [
-  {
-    name: "Засуха",
-    photo: "../../weather/drought/drought.jpg",
-    audio: "../../weather/drought/drought.mp3",
-  },
-  {
-    name: "Наводнение",
-    photo: "../../weather/flood/flood.jpg",
-    audio: "../../weather/flood/flood.mp3",
-  },
-  {
-    name: "Заморозок",
-    photo: "../../weather/frost/frost.jpg",
-    audio: "../../weather/frost/frost.mp3",
-  },
-  {
-    name: "Зной",
-    photo: "../../weather/heat/heat.jpg",
-    audio: "../../weather/heat/heat.mp3",
-  }
-];
+const pest = [
+    {
+        name: "Насекомые",
+        photo: "../../pests/insect/insect.jpg",
+        audio: "../../pests/insect/insect.mp3"
+    }, 
+    {
+        name: "Сорняки",
+        photo: "../../pests/weed/weed.jpg",
+        audio: "../../pests/weed/weed.mp3"
+    }, 
+    {
+        name: "Грызуны",
+        photo: "../../pests/rodent/rodent.jpg",
+        audio: "../../pests/rodent/rodent.mp3"
+    }];
 
-export function Weather() {
+export function Pest () {
   return (
     <div className="game__window">
       <Link to="/">
@@ -31,9 +26,9 @@ export function Weather() {
           <img src="../icons/circle-xmark.svg" className="close-img" />
         </button>
       </Link>
-      <div className="weather cards">
-        {weather.map((el, id) => (
-          <Link to={`/weather/${id}`} className={`card`}>
+      <div className="pest cards">
+        {pest.map((el, id) => (
+          <Link to={`/pests/${id}`} className={`card`}>
           <div className="card__main">
             <p className="card__name">{el.name}</p>
             <img src={el.photo} alt={el.name} className="card__img" />

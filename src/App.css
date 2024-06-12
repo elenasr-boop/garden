@@ -116,9 +116,16 @@ body {
   grid-template-rows: 1fr 1fr;
 }
 
+.weather {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
 
-
-.fertilizer, .light, .water, .temp, .pests, .choice {
+.fertilizer, .light, .water, .temp, .pests, .choice, .pest {
   display: flex;
   justify-content: space-around;
 }
@@ -126,7 +133,7 @@ body {
 .fertilizer .card .card__name,
 .light .card .card__name,
 .water .card .card__name, 
-.temp .card .card__name, .choice
+.temp .card .card__name, .choice, .pest
  {
   font-size: large;
 }
@@ -137,12 +144,4 @@ body {
   grid-template-rows: 1fr 1fr;
   justify-items: center;
   gap: 15px;
-}
-
-.weather {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px;
-  padding-left: 90px;
 }

@@ -9,7 +9,7 @@ export function Complication() {
         </button>
       </Link>
       <div className="choice cards">
-        <Link to="/pests" className={`card`}>
+        <Link to="/pest" className={`card`}>
           <div className="card__main">
             <p className="card__name">Насекомые</p>
             <img src="../pests/insect/insect.jpg" alt="Насекомые" className="card__img" />
