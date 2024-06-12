@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { Card } from "./card";
+import { Card } from "./cards/card.jsx";
 
 const soilArr = [
   {

@@ -5,7 +5,7 @@ import { Plants } from "./components/plant.jsx";
 import { Fertilizer } from "./components/fertilizer.jsx";
 import { Light } from "./components/light.jsx";
 import { Pests } from "./components/pests.jsx";
-import { Soil } from "./components/cards/soil.jsx";
+import { Soil } from "./components/soil.jsx";
 import { Temp } from "./components/temp.jsx";
 import { Water } from "./components/water.jsx";
 import { Weather } from "./components/weather.jsx";

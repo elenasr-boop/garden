@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import "./card.css";
 
 export function Card({ id, card, corAnsw }) {
   const [correctAnsw, setCorrectAnsw] = useState(false);
