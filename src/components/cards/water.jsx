@@ -1,31 +1,26 @@
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const soil = [
-  {
-    name: "Глина",
-    photo: "../../soil/clay.png",
-    audio: "../../soil/clay.mp3",
-  },
-  {
-    name: "Гумус",
-    photo: "../../soil/humus.png",
-    audio: "../../soil/humus.mp3",
-  },
-  {
-    name: "Известь",
-    photo: "../../soil/lime.png",
-    audio: "../../soil/lime.mp3",
-  },
-  {
-    name: "Песок",
-    photo: "../../soil/sand.png",
-    audio: "../../soil/sand.mp3",
-  },
-];
+const waterArr = [
+    {
+        name: "Малое количество воды",
+        photo: "../../water/lesswater.jpg",
+        audio: "../../water/lesswater.mp3",
+    }, 
+    {
+        name: "Среднее количество воды",
+        photo: "../../water/meanwater.jpg",
+        audio: "../../water/meanwater.mp3",
+    }, 
+    {
+        name: "Большое количество воды",
+        photo: "../../water/lotwater.jpg",
+        audio: "../../water/lotwater.mp3",
+    }];
 
-export function Soil() {
+export function Water () {
   let { plant } = useParams();
-  let link = "/water/" + plant;
+  let linkBack = "/soil/" + plant;
+  let linkNext = "/temperature/" + plant;
 
   return (
      <div className="game__window">
@@ -35,13 +30,10 @@ export function Soil() {
         </button>
       </Link>
       <div className="soil cards">
-        {soil.map((el, id) => {
-          function handleClick ( {id} ) {
-            console.log("Вы нажали на ", soil[id].name);
-          }
-
+        {waterArr.map((el, id) => {
+          
           return (
-            <button onClick={handleClick({ id })} className="card" key={id}>
+            <button className="card" key={id}>
               <div className="card__main">
                 <p className="card__name">{el.name}</p>
                 <img src={el.photo} alt={el.name} className="card__img" />
@@ -58,9 +50,9 @@ export function Soil() {
         })}
       </div>
       <div className="buttons">
-        <Link to="/plants" className="before-btn">Назад</Link>
+        <Link to={linkBack} className="before-btn">Назад</Link>
         <button type="submit" className="before-btn">Проверить</button>
-        <Link to={link} className="next-btn">Далее</Link>
+        <Link to={linkNext} className="next-btn">Далее</Link>
       </div>
      </div>
   );
