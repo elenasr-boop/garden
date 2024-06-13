@@ -3,12 +3,17 @@
   padding: 0;
 }
 
+body {
+  background-color: #EFFD72;
+  height: 850px;
+}
+
 #root {
   width: 100%;
 }
 
 .main {
-  height: 340px;
+  height: 390px;
   background-color: #EFFD72;
   padding-left: calc(50% - 120px);
   padding-top: 260px;
@@ -30,7 +35,7 @@
 }
 
 .footer {
-  height: 150px;
+  height: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -49,12 +54,11 @@
 
 .game__window {
   position: absolute;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
   width: calc(100% - 100px);
   background-color: #906CD7;
   top: 50px;
-  right: 50px;
+  right: 20px;
   border-radius: 15px;
   text-align: center;
   display: flex;
@@ -85,7 +89,7 @@
   height: 30px;
 }
 
-.next-btn, .prev-btn {
+.next-btn, .before-btn {
   margin-top: 30px;
   height: 45px;
   width: 130px;
@@ -94,9 +98,10 @@
   border: 0px;
   border-radius: 22px;
   font-size: large;
+  align-content: center;
 }
 
-.next-btn:hover, .prev-btn:hover {
+.next-btn:hover, .before-btn:hover {
   cursor: pointer;
   background-color: #EC3B86;
   color: #8D003B;
@@ -108,17 +113,54 @@
   align-items: center;
   row-gap: 30px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.card {
-  width: 200px;
-  height: 300px;
-  background-color: #EFFD72;
-  border: #AEBC2F 1px solid;
-  color: 	#D9005B	;
+.weather {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  row-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
-.card:hover {
-  cursor: pointer;
+.fertilizer, .light, .water, .temp, .pests, .choice, .pest {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fertilizer .card .card__name,
+.light .card .card__name,
+.water .card .card__name, 
+.temp .card .card__name, .choice, .pest
+ {
+  font-size: large;
+}
+
+.soil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+
+.pests {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+.pests .card {
+  min-width: 200px;
+  width: 300px;
+  height: 200px;
+}
+
+.pests .card .img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
 }
