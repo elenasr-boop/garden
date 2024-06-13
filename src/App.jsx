@@ -27,8 +27,8 @@ function App() {
       <Route path="/weather" element={<Weather />} />
       <Route path="/water/:plant" element={<Water />} />
       <Route path="/complication" element={<Complication />} />
-      <Route path="/pests/:id" element={<Pests />} />
-      <Route path="/weather/:id" element={<Weather2 />} />
+      <Route path="/pests/:pestChoice" element={<Pests />} />
+      <Route path="/weather/:weatherChoice" element={<Weather2 />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

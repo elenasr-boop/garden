@@ -20,6 +20,11 @@ const weather = [
     name: "Зной",
     photo: "../../weather/heat/heat.jpg",
     audio: "../../weather/heat/heat.mp3",
+  },
+  {
+    name: "Оттепель",
+    photo: "../../weather/thaw/thaw.jpg",
+    audio: "../../weather/thaw/thaw.mp3",
   }
 ];
 

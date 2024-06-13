@@ -145,3 +145,22 @@ body {
   justify-items: center;
   gap: 15px;
 }
+
+.pests {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+.pests .card {
+  min-width: 200px;
+  width: 300px;
+  height: 200px;
+}
+
+.pests .card .img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
